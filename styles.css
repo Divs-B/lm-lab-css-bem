@@ -10,7 +10,7 @@ body{
     display:grid;
     grid-template-areas: "header"
     "card" "card";
-    grid-template-columns: auto auto;
+    grid-template-columns: auto auto;    
 }
 
 .header{    
@@ -45,4 +45,26 @@ body{
     max-width: 50%;
     border: 2px;
     padding: 2px;
+}
+
+
+/* Structure */
+
+.button {
+  width: 7rem;
+  padding: 5px;
+  border-radius: 4px;
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+}
+
+/* Skins */
+
+.buttonSuccess {
+  background: rgb(56, 160, 56);
+}
+
+.buttonDanger {
+  background: rgb(209, 75, 75);
 }
