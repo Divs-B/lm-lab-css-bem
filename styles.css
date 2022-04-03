@@ -1,7 +1,48 @@
-/* You can delete / re-write this img class  */
-
-img {
-    max-width: 200px;
+body{
+    background-color: rgb(181, 231, 229);
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-/* Happy coding! */
+/*Construct rule for container
+  that has display as grid to have header at the top and two cards besides each other
+  It is scalable and will laid out same way if more cards get added*/
+.container{
+    display:grid;
+    grid-template-areas: "header"
+    "card" "card";
+    grid-template-columns: auto auto;
+}
+
+.header{    
+    grid-area: "header";
+    text-align: center;
+    color: rgb(86, 207, 223);
+}
+
+/*Indiviual card layout*/
+.card {  
+  background-color: white;  
+  border: 1px solid #bacdd8;  
+  padding: 8px;
+  border-radius: 12px;
+}
+
+/*text inside the card;notation inspired by BEM*/
+.card__details {  
+  padding: 8px 8px 8px 8px;
+  color: rgb(62, 25, 223);
+}
+
+.card__light-theme{
+ background-color: #aff;
+}
+
+.card__dark-theme{
+    background-color: #009688;
+}
+
+.img{
+    max-width: 50%;
+    border: 2px;
+    padding: 2px;
+}
