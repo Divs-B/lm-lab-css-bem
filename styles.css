@@ -28,16 +28,16 @@ body{
 }
 
 /*text inside the card;notation inspired by BEM*/
-.card__details {  
+.card__text {  
   padding: 8px 8px 8px 8px;
   color: rgb(62, 25, 223);
 }
 
-.card__light-theme{
+.card--light{
  background-color: #aff;
 }
 
-.card__dark-theme{
+.card--dark{
     background-color: #009688;
 }
 
@@ -61,10 +61,10 @@ body{
 
 /* Skins */
 
-.buttonSuccess {
+.button--success {
   background: rgb(56, 160, 56);
 }
 
-.buttonDanger {
+.button--danger {
   background: rgb(209, 75, 75);
 }
